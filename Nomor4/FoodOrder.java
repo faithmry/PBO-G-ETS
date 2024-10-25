@@ -47,14 +47,14 @@ public class FoodOrder {
             System.out.println("4. Exit");
             System.out.print("Choose an option: ");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume the leftover newline
+            scanner.nextLine();
 
             if (choice == 1) {
                 System.out.print("Enter item name: ");
                 String item = scanner.nextLine();
                 System.out.print("Enter item price: ");
                 double price = scanner.nextDouble();
-                scanner.nextLine(); // Consume the leftover newline
+                scanner.nextLine();
                 order.addItem(item, price);
                 System.out.println("Item added.");
             } else if (choice == 2) {
@@ -62,7 +62,7 @@ public class FoodOrder {
                 String item = scanner.nextLine();
                 System.out.print("Enter item price: ");
                 double price = scanner.nextDouble();
-                scanner.nextLine(); // Consume the leftover newline
+                scanner.nextLine();
                 order.removeItem(item, price);
                 System.out.println("Item removed.");
             } else if (choice == 3) {
