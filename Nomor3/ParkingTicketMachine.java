@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class ParkingTicketMachine {
-    private int balance;
-    private int ticketPrice;
-    private int ticketTime;
+    private double balance;
+    private double ticketPrice;
+    private double ticketTime;
 
     public ParkingTicketMachine(int ticketPrice) {
         this.ticketPrice = ticketPrice;
@@ -26,7 +26,7 @@ public class ParkingTicketMachine {
         }
     }
 
-    public int getTimePurchased() {
+    public double getTimePurchased() {
         return this.ticketTime;
     }
 
